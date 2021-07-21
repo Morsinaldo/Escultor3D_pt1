@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1626811509 source:c:\users\kyralduin\desktop\escultor3d\teste_escultor\main.cpp
+	<iostream>
+	"Sculptor.h"
+
+1626743411 source:c:\users\kyralduin\desktop\escultor3d\teste_escultor\src\sculptor.cpp
+	"Sculptor.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<math.h>
+	<cstdlib>
+	<iomanip>
+
+1626741048 c:\users\kyralduin\desktop\escultor3d\teste_escultor\include\sculptor.h
+	<string>
+
+1626826441 source:c:\users\kyralduin\desktop\escultor 3d\src\sculptor.cpp
+	"Sculptor.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<math.h>
+	<cstdlib>
+	<iomanip>
+
+1626741048 c:\users\kyralduin\desktop\escultor 3d\include\sculptor.h
+	<string>
+
+1626826209 source:c:\users\kyralduin\desktop\escultor 3d\main.cpp
+	<iostream>
+	"Sculptor.h"
+
