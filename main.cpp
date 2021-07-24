@@ -10,19 +10,18 @@ int main()
 
     // ---- COLOCANDO BLOCOS ----
     // CABINE
+    nave.setColor(0,0,0,0);
     nave.putSphere(50,50,50,15);
-    nave.setColor(50,50,50);
 
     // BRACOS
+    nave.setColor(150,150,150,0);
     nave.putEllipsoid(50,50,50,10,37,10);
-    nave.setColor(100,100,100);
 
     // PLACAS
+    nave.setColor(100,100,100,0);
     nave.putBox(30,70,15,15,30,70);
-    nave.setColor(100,100,100);
+    nave.setColor(100,100,100,0);
     nave.putBox(30,70,85,85,30,70);
-    nave.setColor(100,100,100);
-
 
 
     // ---- CORTANDO BLOCOS ----
@@ -32,10 +31,10 @@ int main()
         nave.cutVoxel(i,85,j);
         nave.cutVoxel(i,15,j);
 
+        nave.setColor(0,0,0,0);
         nave.putVoxel(i,85,j);
-        nave.setColor(0,0,0);
+        nave.setColor(0,0,0,0);
         nave.putVoxel(i,15,j);
-        nave.setColor(0,0,0);
     }
 
     for(int i = 30; i <= 70; i++){
@@ -43,21 +42,21 @@ int main()
         nave.cutVoxel(i,85,j);
         nave.cutVoxel(i,15,j);
 
+        nave.setColor(0,0,0,0);
         nave.putVoxel(i,85,j);
-        nave.setColor(0,0,0);
+        nave.setColor(0,0,0,0);
         nave.putVoxel(i,15,j);
-        nave.setColor(0,0,0);
+
     }
 
     for(int i = 30; i <= 70; i++){
         nave.cutVoxel(i,85,50);
         nave.cutVoxel(i,15,50);
 
+        nave.setColor(0,0,0,0);
         nave.putVoxel(i,85,50);
-        nave.setColor(0,0,0);
+        nave.setColor(0,0,0,0);
         nave.putVoxel(i,15,50);
-        nave.setColor(0,0,0);
-
     }
 
     nave.cutEllipsoid(50,50,50,7,35,7);
@@ -65,8 +64,8 @@ int main()
     nave.cutBox(60,75,40,60,40,60);
 
     // CADEIRA
+    nave.setColor(254,254,254,0);
     nave.putBox(45,53,45,55,45,55);
-    nave.setColor(0,0,0);
     nave.cutBox(48,53,45,55,50,55);
     nave.cutBox(48,53,47,53,48,55);
 

@@ -1,7 +1,6 @@
 #include "Sculptor.h"
 #include <iostream>
 #include <fstream>
-#include <vector>
 #include <math.h>
 #include <cstdlib>
 #include <iomanip>
@@ -54,11 +53,12 @@ using namespace std;
   *
   * (documentation goes here)
   */
-void Sculptor::setColor(float r_, float g_, float b_)
+void Sculptor::setColor(float r_, float g_, float b_, float a_)
 {
     r = r_;
     b = b_;
     g = g_;
+    a = a_;
 }
 
 /** @brief (one liner)
@@ -118,6 +118,7 @@ void Sculptor::cutBox(int x0, int x1, int y0, int y1, int z0, int z1)
   */
 void Sculptor::putSphere(int xcenter, int ycenter, int zcenter, int radius)
 {
+    // x^2 + y^2 + z^2 = r^2
     double dist;
     for(int i = 0; i < nx; i++){
         for(int j = 0; j < ny; j++){
@@ -306,7 +307,7 @@ void Sculptor::writeOFF(char *filename){
     }
 
     t = 0;
-    // ---- ESCRITA DOS INDICES (VERTICES: 8 EM 8) ----
+    // ---- ESCRITA DOS INDICES DAS FACES (VERTICES: 8 EM 8) ----
     /*
         Face 0: P0 P3 P2 P1
         Face 1: P4 P5 P6 P7
@@ -323,22 +324,22 @@ void Sculptor::writeOFF(char *filename){
                     // FACE 0
                     f << fixed;
                     f << 4 << " " << index + 0 << " " << index + 3 << " " << index + 2 << " " << index + 1 << " ";
-                    f << setprecision(2) << v[x][y][z].r/255.0 << " " << setprecision(2) << v[x][y][z].g/255.0 << " " << setprecision(2) << v[x][y][z].b/255.0 << "\n";
+                    f << setprecision(2) << v[x][y][z].r << " " << setprecision(2) << v[x][y][z].g << " " << setprecision(2) << v[x][y][z].b << " " << setprecision(2) << v[x][y][z].a << "\n";
                     // FACE 1
                     f << 4 << " " << index + 4 << " " << index + 5 << " " << index + 6 << " " << index + 7 << " ";
-                    f << setprecision(2) << v[x][y][z].r/255.0 << " " << setprecision(2) << v[x][y][z].g/255.0 << " " << setprecision(2) << v[x][y][z].b/255.0 << "\n";
+                    f << setprecision(2) << v[x][y][z].r << " " << setprecision(2) << v[x][y][z].g << " " << setprecision(2) << v[x][y][z].b << " " << setprecision(2) << v[x][y][z].a << "\n";
                     // FACE 2
                     f << 4 << " " << index + 0 << " " << index + 1 << " " << index + 5 << " " << index + 4 << " ";
-                    f << setprecision(2) << v[x][y][z].r/255.0 << " " << setprecision(2) << v[x][y][z].g/255.0 << " " << setprecision(2) << v[x][y][z].b/255.0 << "\n";
+                    f << setprecision(2) << v[x][y][z].r << " " << setprecision(2) << v[x][y][z].g << " " << setprecision(2) << v[x][y][z].b << " " << setprecision(2) << v[x][y][z].a << "\n";
                     // FACE 3
                     f << 4 << " " << index + 0 << " " << index + 4 << " " << index + 7 << " " << index + 3 << " ";
-                    f << setprecision(2) << v[x][y][z].r/255.0 << " " << setprecision(2) << v[x][y][z].g/255.0 << " " << setprecision(2) << v[x][y][z].b/255.0 << "\n";
+                    f << setprecision(2) << v[x][y][z].r << " " << setprecision(2) << v[x][y][z].g << " " << setprecision(2) << v[x][y][z].b << " " << setprecision(2) << v[x][y][z].a << "\n";
                     // FACE 4
                     f << 4 << " " << index + 7 << " " << index + 6 << " " << index + 2 << " " << index + 3 << " ";
-                    f << setprecision(2) << v[x][y][z].r/255.0 << " " << setprecision(2) << v[x][y][z].g/255.0 << " " << setprecision(2) << v[x][y][z].b/255.0 << "\n";
+                    f << setprecision(2) << v[x][y][z].r << " " << setprecision(2) << v[x][y][z].g << " " << setprecision(2) << v[x][y][z].b << " " << setprecision(2) << v[x][y][z].a << "\n";
                     // FACE 5
                     f << 4 << " " << index + 1 << " " << index + 2 << " " << index + 6 << " " << index + 5 << " ";
-                    f << setprecision(2) << v[x][y][z].r/255.0 << " " << setprecision(2) << v[x][y][z].g/255.0 << " " << setprecision(2) << v[x][y][z].b/255.0 << "\n";
+                    f << setprecision(2) << v[x][y][z].r << " " << setprecision(2) << v[x][y][z].g << " " << setprecision(2) << v[x][y][z].b << " " << setprecision(2) << v[x][y][z].a << "\n";
                     t++;  // INCREMENTA O TOTAL DE VOXELS EM FORMATO DE CUBO
                 }
             }

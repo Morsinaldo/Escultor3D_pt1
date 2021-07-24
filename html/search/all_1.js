@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['cutbox_1',['cutBox',['../class_sculptor.html#aa84a1b12b09e9e103fc8d78f8d1bc00f',1,'Sculptor']]],
-  ['cutellipsoid_2',['cutEllipsoid',['../class_sculptor.html#a18d2922c111c4c13653ee07d878151ad',1,'Sculptor']]],
-  ['cutsphere_3',['cutSphere',['../class_sculptor.html#a67ab8c0ba5116adb8af1d01ad373ac15',1,'Sculptor']]],
-  ['cutvoxel_4',['cutVoxel',['../class_sculptor.html#a56149f4f3357655535e4374c5d77ab2e',1,'Sculptor']]]
+  ['b_1',['b',['../struct_voxel.html#a5cd8432b1d7d0fd8b79e0fc7d10373a8',1,'Voxel::b()'],['../class_sculptor.html#a7aafd7305ea634252d8288b60536cd96',1,'Sculptor::b()']]]
 ];

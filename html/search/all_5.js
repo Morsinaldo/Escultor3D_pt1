@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['nx_9',['nx',['../class_sculptor.html#ad1e32f9042538419a3bc7b376f7813b8',1,'Sculptor']]],
-  ['ny_10',['ny',['../class_sculptor.html#a1ce2ff97ec94927928ab3f5ec4ba6761',1,'Sculptor']]],
-  ['nz_11',['nz',['../class_sculptor.html#a33204e7df26a7ee4c7192381a24335d3',1,'Sculptor']]]
+  ['main_8',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['main_2ecpp_9',['main.cpp',['../main_8cpp.html',1,'']]]
 ];

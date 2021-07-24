@@ -6,6 +6,7 @@ using namespace std;
 
 struct Voxel {
     float r,g,b; // COLORS
+    float a; // TRANSPARENCY
     bool isOn; // SHOW OR HIDE
 };
 
@@ -14,7 +15,7 @@ class Sculptor
     protected:
         Voxel ***v; // MATRIX 3D
         int nx,ny,nz; // MATRIX SIZE
-        float r,g,b; // MATRIX COLORS
+        float r,g,b,a; // MATRIX COLORS
     public:
         /** @brief (one liner)
         *
@@ -25,7 +26,7 @@ class Sculptor
         *
         * (documentation goes here)
         */
-        void setColor(float r_, float g_, float b_);
+        void setColor(float r_, float g_, float b_, float a_);
         /** @brief (one liner)
         *
         * (documentation goes here)

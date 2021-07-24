@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['v_50',['v',['../class_sculptor.html#a4ca53a2f2fbf41ca42dfe729ebe693f1',1,'Sculptor']]]
+  ['r_51',['r',['../struct_voxel.html#a06872ec79b836120b551a848968c0f1b',1,'Voxel::r()'],['../class_sculptor.html#a3f5d2ec3b66d645019b8d81c810a1cd8',1,'Sculptor::r()']]]
 ];

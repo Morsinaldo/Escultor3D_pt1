@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ison_6',['isOn',['../struct_voxel.html#a6fbe8bd53f64685ac4210726d40fc775',1,'Voxel']]]
+  ['g_6',['g',['../struct_voxel.html#a27c0da1ed2ff430401d23ff171612a73',1,'Voxel::g()'],['../class_sculptor.html#a208c06af69a81a1568df4493868816f1',1,'Sculptor::g()']]]
 ];

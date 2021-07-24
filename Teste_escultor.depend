@@ -15,19 +15,18 @@
 1626741048 c:\users\kyralduin\desktop\escultor3d\teste_escultor\include\sculptor.h
 	<string>
 
-1626826441 source:c:\users\kyralduin\desktop\escultor 3d\src\sculptor.cpp
+1627066220 source:c:\users\kyralduin\desktop\escultor 3d\src\sculptor.cpp
 	"Sculptor.h"
 	<iostream>
 	<fstream>
-	<vector>
 	<math.h>
 	<cstdlib>
 	<iomanip>
 
-1626741048 c:\users\kyralduin\desktop\escultor 3d\include\sculptor.h
+1627060197 c:\users\kyralduin\desktop\escultor 3d\include\sculptor.h
 	<string>
 
-1626826209 source:c:\users\kyralduin\desktop\escultor 3d\main.cpp
+1627065685 source:c:\users\kyralduin\desktop\escultor 3d\main.cpp
 	<iostream>
 	"Sculptor.h"
 
